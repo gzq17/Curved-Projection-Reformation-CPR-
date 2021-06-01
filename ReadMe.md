@@ -1,6 +1,5 @@
 #Description
 Assuming that we already know the image of the centerline, we want the lumen to be displayed on a plane, which requires curved projection reformation(CPR).The figure below is a common coronary centerline display in the paper.
-![](picture1.png)
 #Function introduction
 ##The center line is a representation of a series of points.
 You can call the function *cpr(img_name, center_line_name)* directly, where *img_name* represents the path of the image and *center_line_name* represents the path of the centerline point. The former supports *.nii.gz* and *.mha* files. The latter only supports *.npy* files.
