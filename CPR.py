@@ -54,7 +54,7 @@ def find_point_list(thin_label_name, start, end):
     while last[0] != -1:
         path.append(last)
         last = last_point[str(last[0]) + '+' + str(last[1]) + '+' + str(last[2])]
-    path_arr = path[0][np.newaxis, :]
+    path_arr = np.array(path[0])[np.newaxis, :]
     for i in range(1, len(path)):
         path_arr = np.concatenate([path_arr, np.array(path[i])[np.newaxis, :]])
     np.save('path.npy', path_arr)
